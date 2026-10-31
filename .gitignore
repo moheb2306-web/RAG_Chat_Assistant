@@ -1,0 +1,15 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local vector database and uploaded documents
+chroma_db/
+data/*.pdf
+
+# Streamlit
+.streamlit/secrets.toml

@@ -1,0 +1,28 @@
+[project]
+name = "company-rag-chatbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "moheb2306-web", email = "" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "chromadb>=0.5.0",
+    "langchain>=0.3.0",
+    "langchain-chroma>=0.1.4",
+    "langchain-community>=0.3.0",
+    "langchain-core>=0.3.0",
+    "langchain-openai>=0.2.0",
+    "langchain-text-splitters>=0.3.0",
+    "pypdf>=5.0.0",
+    "python-dotenv>=1.0.1",
+    "streamlit>=1.39.0",
+]
+
+[project.scripts]
+company-rag-chatbot = "company_rag_chatbot:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
